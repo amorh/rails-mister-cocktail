@@ -1,0 +1,10 @@
+<div class="card" style="width: 18rem;">
+  <img src="https://d32miag6ta013h.cloudfront.net/master_cocktails/1348/en-ca/small/525x525_roman-cosmo-martini-cocktail.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <% @cocktail.doses.each do |dose| %>
+        <h5 class="card-title"><%= @cocktail.name %></h5>
+        <p class="card-text"><%= dose.ingredient.name %></p>
+        <p class="card-text"><%= dose.description %></p>
+      <% end %>
+    </div>
+</div>
